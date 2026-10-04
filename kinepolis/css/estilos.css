@@ -13,22 +13,95 @@ body {
 }
 
 .pelicula {
-    background: var(--color-superficie);
+    background-color: #f8d7da;
+    color: var(--color-texto);
     padding: var(--espacio);
     border-radius: var(--radio);
+    border: 2px solid #f5c2c7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
 }
 
-.badge {
-    background-color: #4caf50;
-    color: white; 
-    padding: 4px 8px; 
-    border-radius: 4px; 
-    font-size: 0.8rem; 
-    display: inline-block; 
-    margin-top: 10px; 
-}
 
 .fondo-verde {
-    background-color: #d4f3d4; 
-    border: 2px solid #4caf50;
+    background-color: #d4f3d4 !important; 
+    border: 2px solid #4caf50 !important;
+}
+
+.pelicula label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cartelera {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1800px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.controles-superiores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+}
+
+.boton {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.boton:hover {
+    background-color: #555; 
+}
+
+.boton-nuevo {
+    background-color: #0275d8;
+}
+
+.boton-nuevo:hover {
+    background-color: #025aa5;
+}
+
+.boton.peligro {
+    background-color: #d9534f;
+}
+
+.boton.peligro:hover {
+    background-color: #c9302c;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.acciones .boton, 
+.acciones form, 
+.acciones form button {
+    width: 100%;
+    text-align: center;
 }
